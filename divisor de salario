@@ -1,0 +1,20 @@
+nome = str(input('Seu Nome: '))
+print(f'Olá {nome}, vamos analisar as melhores formas de aplicar o seu dinheiro?.')
+print('O principal objetivo é que você consiga equilibrar as suas entradas e saídas e poupar dinheiro, entendendo qual será o destino do seu dinheiro.' )
+ganho = int(input('Informe uma quantia:  '))
+if ganho > 3000:
+    print(f'{nome}, essa é uma boa quantia arrecadada.')
+meta = int(input('Informe uma Meta a ser poupada: '))
+soma1 = 50*ganho/100
+soma2 = 30*ganho/100
+soma3 = 20*ganho/100
+if soma3 > 500:
+    print(f'{int(soma3)} é uma boa quantia para investir.')
+soma4 = meta - soma3
+print(f'50% Para Despesas fixas e essenciais, Totalizando R$: {int(soma1)} reais.')
+print('(Aluguel, Contas, Alimentaçao e etc.)')
+print(f'30% para Despesas variáveis, gastos que não são necessários, Totalizando R$: {int(soma2)} reais.')
+print('(Diversao, roupas, Entretenimento e etc.)')
+print(f'20% para reserva financeira e projetos, Totalizando R$: {int(soma3)} reais.')
+print('(Investimentos, Cursos, Estudos, metas e etc.)')
+print(f'Faltam R$: {int(soma4)} para voce alcançar sua meta.')
